@@ -1,0 +1,37 @@
+USI_collection_identifiers:
+  PXD_identifier:
+    short_name: PXD identifier
+    full_name: ProteomeXchange identifier
+    pattern: PXDnnnnnn
+    regular_expression: PXD\d{6}
+    identifers_org_prefix: px
+    example: PXD017269
+    primary_json_resolver: http://proteomecentral.proteomexchange.org/api/proxi/v0.1/datasets/$id
+    primary_xml_resolver: http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=$id&outputMode=XML
+    primary_html_resolver: http://proteomecentral.proteomexchange.org/dataset/$id
+  RPXD_identifier:
+    short_name: RPXD identifier
+    full_name: ProteomeXchange reanalysis identifier
+    pattern: RPXDnnnnnn
+    regular_expression: RPXD\d{6}
+    identifers_org_prefix: px
+    example: RPXD017269
+    primary_json_resolver: http://proteomecentral.proteomexchange.org/api/proxi/v0.1/datasets/$id
+    primary_xml_resolver: http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=$id&outputMode=XML
+    primary_html_resolver: http://proteomecentral.proteomexchange.org/dataset/$id
+  PXL_identifier:
+    short_name: PXL identifier
+    full_name: ProteomeXchange spectrum library identifier
+    pattern: PXLnnnnnn
+    regular_expression: PXL\d{6}
+    identifers_org_prefix: px
+    example: PXL000001
+  MSV_identifier:
+    short_name: MSV identifier
+    full_name: MassIVE dataset identifier
+    pattern: MSVnnnnnnnnn
+    regular_expression: MSV\d{9}
+    identifers_org_prefix: null
+    example: MSV000078556
+
+
