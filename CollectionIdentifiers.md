@@ -10,16 +10,20 @@ the list is maintained here at GitHub and is extensible in an open manner withou
 (http://proteomecentral.proteomexchange.org/dataset/PXD017269). The PXDnnnnnn SHOULD be used for all proteomics
 mass spectrometry datasets that have been registered at ProteomeXchange.
 
-2. MSVnnnnnnnnn - A collection identifier for a datasets contained at the MassIVE repsository, such as MSV000078556. This type of 
+2. MSVnnnnnnnnn - A collection identifier for datasets contained at the MassIVE repsository, such as MSV000078556. This type of 
 identifier SHOULD only be used when there is not a corresponding PXDnnnnnn identifier for the dataset, as is often the case
 for metabolomics datasets.
 
 3. RPXDnnnnnn - A ProteomeXchange identifier for a reprocessed dataset of the form RPXDnnnnnn, such as RPXD006668
 (http://proteomecentral.proteomexchange.org/dataset/RPXD006668). The RPXDnnnnnn SHOULD ONLY be used when there is no
 corresponding PXDnnnnnn identifier available (as in the case where an RPXDnnnnnn dataset derives from a non-ProteomeXchange
-dataset.) The PXDnnnnnn identifier should always be used when possible.
+dataset) or in the context of a PSM identifier
 
-4. PXLnnnnnn - A ProteomeXchange spectral library identifier of the form PXLnnnnnn. All spectral libraries registered
+4. RMSVnnnnnnnnn - A collection identifier for reprocessed datasets contained at the MassIVE repsository, such as RMSV000078556.
+This type of 
+identifier SHOULD ONLY be used when there is not a corresponding PXDnnnnnn identifier for the dataset, since PXDnnnnnn identifiers are preferred.
+
+5. PXLnnnnnn - A ProteomeXchange spectral library identifier of the form PXLnnnnnn. All spectral libraries registered
 through ProteomeCentral are given a PXLnnnnnn identifier. These collections contain representative spectra often aggregated
 from several replicates, rather than original scan events in MS datasets as denoted by PXDnnnnnn identifiers.
 
