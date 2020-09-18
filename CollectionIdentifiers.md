@@ -23,7 +23,12 @@ dataset) or in the context of a PSM identifier
 This type of 
 identifier SHOULD ONLY be used when there is not a corresponding PXDnnnnnn identifier for the dataset, since PXDnnnnnn identifiers are preferred.
 
-5. PXLnnnnnn - A ProteomeXchange spectral library identifier of the form PXLnnnnnn. All spectral libraries registered
+5. USI000000 - A collection identifier to be used as a placeholder for an as-yet unknown collection identifier.
+In cases where a USI must be written at a time when the final collection identifier is not yet known, 
+a placeholder of USI000000 SHOULD be used, so as to enable a straightforward search and replace when the final PXD number
+or other collection identifier is registered. Software implementations should recognize this string as a placeholder that needs to be resolved.
+
+6. PXLnnnnnn - A ProteomeXchange spectral library identifier of the form PXLnnnnnn. All spectral libraries registered
 through ProteomeCentral are given a PXLnnnnnn identifier. These collections contain representative spectra often aggregated
 from several replicates, rather than original scan events in MS datasets as denoted by PXDnnnnnn identifiers.
 
