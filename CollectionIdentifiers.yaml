@@ -26,6 +26,13 @@ USI_collection_identifiers:
     regular_expression: PXL\d{6}
     identifers_org_prefix: px
     example: PXL000001
+  Collection_placeholder:
+    short_name: Collection placeholder
+    full_name: USI collection identifier placeholder
+    pattern: USI000000
+    regular_expression: USI000000
+    identifers_org_prefix: null
+    example: USI000000
   MSV_identifier:
     short_name: MSV identifier
     full_name: MassIVE dataset identifier
