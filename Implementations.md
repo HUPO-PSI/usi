@@ -14,12 +14,16 @@ There is an important distinction between the USI, which is just an identifier, 
 For the moment, it is recommended that we begin with some interactive interfaces to explore the fitness of this specification and explore how it should be amended.
 
 Servers supporting the USI are expected to return a set of rich non-success messages to the user. One benefit of the multipart key USI design is that servers can parse the identifier and return one of the following error messages if the retrieval of the spectrum is not successful:
+
+Inherent USI syntax problems:
 - [MissingPreamble] USI does not begin with expected preamble 'mzspec:’
 - [UnrecognizedDatasetIdentifierFormat] Identifier 'XXX’ does not conform to a known allowable identifier.
-- [DatasetNotAvailable] Dataset identifier ‘XXX’ is recognized but not an available collection at this server.
 - [EmptyMsRun] Third field MS run is empty, which is not permitted.
-- [InvalidMsRun] Specified MS run ‘YYY’ is not found within the dataset with identifier ‘XXX’, which is present on this server.
 - [UnrecognizedIndexFlag] Fourth field is supposed to be an index flag, but its value is 'ZZZ', which is not a permitted value. Only 'scan', ‘index’, or ‘nativeId’ are currently permitted.
+
+Problems related to a server not finding the specified resource:
+- [DatasetNotAvailable] Dataset identifier ‘XXX’ is recognized but not an available collection at this server.
+- [InvalidMsRun] Specified MS run ‘YYY’ is not found within the dataset with identifier ‘XXX’, which is present on this server.
 - [UnavailableIndex] Provided index ‘AAA’ appears to be an invalid index of type ‘ZZZ’ within dataset identifier ‘XXX’ and MS run ‘YYY’.
 - [SpectrumUnavailable] Dataset, MSRun, and index appear valid and should be available here, but the spectrum could not be fetched from the data store (internal server data fetching error)
 - Etc.
