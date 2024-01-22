@@ -12,12 +12,13 @@ examples of USIs for both strategies.
 
 1. USI for SAGQGEVLVYVEDPAGHQEEAK: [mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396:SAGQGEVLVYVEDPAGHQEEAK/3](https://proteomecentral.proteomexchange.org/usi/?usi=mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396:SAGQGEVLVYVEDPAGHQEEAK/3)
 This PSM clearly shows that while there are definitely other, more abundant analytes in the selection window, this peptide SAGQGEVLVYVEDPAGHQEEAK (3+) has
-very good evidence of being one of the present analytes. This USI was selected from a DIA-NN (ref) analysis of PXD019909.
+very good evidence of being one of the present analytes. There is a very long y ion series and long bio ion series with nearly every residue in the peptide having a y or b ion.
+This USI was selected from a DIA-NN (ref) analysis of [PXD019909](https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD019909)....
 (It would be very nice to share of details about how this USI was constructed based on the DIA-NN output files).
 
 1. USI for SHHSHSSSSSSSASTSGK: [mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Keratinocytes_NN002:scan:4979:SHHSHSSSSSSSASTSGK/2](https://proteomecentral.proteomexchange.org/usi/?usi=mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Keratinocytes_NN002:scan:4979:SHHSHSSSSSSSASTSGK/2)
-This PSM clearly shows that while there are definitely other, more abundant analytes in the selection window, this peptide SAGQGEVLVYVEDPAGHQEEAK (3+) has
-very good evidence of being one of the present analytes. This USI was selected from a DIA-NN (ref) analysis of PXD019909.
+This PSM clearly shows a likely false positive identification. There are only identified peaks for b2, y1, y2 peaks, which would be a potential property of many of peptides, even within
+a narrow retention time range. This USI was selected from a DIA-NN (ref) analysis of [PXD019909](https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD019909)....
 (It would be very nice to share of details about how this USI was constructed based on the DIA-NN output files).
 
 
