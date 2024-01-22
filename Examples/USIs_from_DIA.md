@@ -5,7 +5,7 @@ from a list of expected analytes in a mode somewhat analogous to selected reacti
 referred to as peptide-centric analysis ([see e.g. Ting et al. PMC4563716](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4563716)).
 The second method is to attempt to extract fragmentation spectra from the DIA signals based on temporal shape of the elution
 profiles (i.e. all fragment ion signals that exhibit an aligned rise and fall in time can be assumed to originate from the same
-anayte), and process those extracted spectra with conventional search engines in a spectrum-centric mode. Here we provide some
+analyte), and process those extracted spectra with conventional search engines in a spectrum-centric mode. Here we provide some
 examples of USIs for both strategies.
 
 # USIs for peptide-centric analysis of DIA data:
