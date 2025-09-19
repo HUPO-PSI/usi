@@ -34,12 +34,12 @@ Figure 2. ProteomeCentral Lorikeet visualization of mzspec:PXD019909:20180914_QE
 
 # Methods for generating USIs from DIA-NN analysis
 
-DIA-NN is one of the most common data analysis tools for DIA data, but its default output does not report the scan numbers that can be used in USIs. The output does report retention times. It would be ideal to get DIA-NN output to directly report peak scan numbers for use in the USIs. Efforts are underway to do this. In the meantime or as an alternative, a method to convert retention times into scan numbers is possible, although would be more cumbersome for users.
+DIA-NN is one of the most common data analysis tools for DIA data, but its default output does not report the scan numbers that can be used in USIs. The output does report retention times. It would be ideal to get DIA-NN output to directly report peak scan numbers for use in the USIs. Efforts are underway to do this. In the meantime or as an alternative, a method to convert retention times into scan numbers is possible, although would be more cumbersome for users. Another alternative is to extend the USI specification to accept a retention time directly and enable back-end tools to convert from the supplied retention time to scan numbers that can be used to access the spectra directly.
 
 
 # Methods for generating USIs from Spectronaut analysis
 
-Spectronaut is one of the most common data analysis tools for DIA data, but its default output does not report the scan numbers that can be used in USIs. The output does report retention times. It would be ideal to get Spectronaut output to directly report peak scan numbers for use in the USIs. Efforts are underway to do this. In the meantime or as an alternative, a method to convert retention times into scan numbers is possible, although would be more cumbersome for users.
+Spectronaut is one of the most common data analysis tools for DIA data, but its default output does not report the scan numbers that can be used in USIs. The output does report retention times. It would be ideal to get Spectronaut output to directly report peak scan numbers for use in the USIs. Efforts are underway to do this. In the meantime or as an alternative, a method to convert retention times into scan numbers is possible, although would be more cumbersome for users. Another alternative is to extend the USI specification to accept a retention time directly and enable back-end tools to convert from the supplied retention time to scan numbers that can be used to access the spectra directly.
 
 
 
