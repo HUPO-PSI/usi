@@ -31,14 +31,6 @@ A second example spectrum can be seen in Figure 2 via USI mzspec:PXD019909:20180
 <img src="https://raw.githubusercontent.com/HUPO-PSI/usi/refs/heads/master/Examples/USIs_from_DIA_Figure2.PNG"><br>
 Figure 2. ProteomeCentral Lorikeet visualization of mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Keratinocytes_NN002:scan:4979:SHHSHSSSSSSSASTSGK/2
 
-# Extensions for the USI for DIA concept
-
-The current design of USIs provides for a single scan number. However, the concept could be extended to include a set of scan numbers in one MS run. For example, for the case of Figure 1, scan number 62396 provides good peaks for the proposed peptide ion. Since this MS run uses 1 MS1 scan followed by 32 MS2 scans, the next scans of this same window are 62429, 62462, 62495, 62528, 62561, etc. In fact, the latter scan provides an even better series of fragment ions, as seen in Figure 3.
-
-<img src="https://raw.githubusercontent.com/HUPO-PSI/usi/refs/heads/master/Examples/USIs_from_DIA_Figure3.PNG"><br>
-Figure 3. ProteomeCentral Lorikeet visualization of mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62561:SAGQGEVLVYVEDPAGHQEEAK/3, five scans of the same window after Figure 1, with even higher signal for this peptide ion.
-
-We hypothesize a USI that provides the full list of scans with good signal for this peptide ion, perhaps such as mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396,62429,62462,62495,62528,62561:SAGQGEVLVYVEDPAGHQEEAK/3 that could provide a more complex visualization that tracks the peptide ion across a set of scans and displays relative fragment ions intensities with predictions such as from MS2PIP or Prosit.
 
 # Methods for generating USIs from DIA-NN analysis
 
@@ -49,4 +41,14 @@ DIA-NN is one of the most common data analysis tools for DIA data, but its defau
 
 Spectronaut is one of the most common data analysis tools for DIA data, but its default output does not report the scan numbers that can be used in USIs. The output does report retention times. It would be ideal to get Spectronaut output to directly report peak scan numbers for use in the USIs. Efforts are underway to do this. In the meantime or as an alternative, a method to convert retention times into scan numbers is possible, although would be more cumbersome for users.
 
+
+
+# Extensions for the USI for DIA concept
+
+The current design of USIs provides for a single scan number. However, the concept could be extended to include a set of scan numbers in one MS run. For example, for the case of Figure 1, scan number 62396 provides good peaks for the proposed peptide ion. Since this MS run uses 1 MS1 scan followed by 32 MS2 scans, the next scans of this same window are 62429, 62462, 62495, 62528, 62561, etc. In fact, the latter scan provides an even better series of fragment ions, as seen in Figure 3.
+
+<img src="https://raw.githubusercontent.com/HUPO-PSI/usi/refs/heads/master/Examples/USIs_from_DIA_Figure3.PNG"><br>
+Figure 3. ProteomeCentral Lorikeet visualization of mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62561:SAGQGEVLVYVEDPAGHQEEAK/3, five scans of the same window after Figure 1, with even higher signal for this peptide ion.
+
+We hypothesize a USI that provides the full list of scans with good signal for this peptide ion, perhaps such as mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396,62429,62462,62495,62528,62561:SAGQGEVLVYVEDPAGHQEEAK/3 that could provide a more complex visualization that tracks the peptide ion across a set of scans and displays relative fragment ions intensities with predictions such as from MS2PIP or Prosit.
 
