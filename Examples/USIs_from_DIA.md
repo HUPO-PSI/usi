@@ -41,18 +41,3 @@ Figure 3. ProteomeCentral Lorikeet visualization of mzspec:PXD019909:20180914_QE
 We hypothesize a USI that provides the full list of scans with good signal for this peptide ion, perhaps such as mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396,62429,62462,62495,62528,62561:SAGQGEVLVYVEDPAGHQEEAK/3 that could provide a more complex visualization that tracks the peptide ion across a set of scans and displays relative fragment ions intensities with predictions such as from MS2PIP or Prosit.
 
 
-
-# Additional Examples
-
-1. USI for SAGQGEVLVYVEDPAGHQEEAK: [mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396:SAGQGEVLVYVEDPAGHQEEAK/3](https://proteomecentral.proteomexchange.org/usi/?usi=mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Skin_Dendritic_cells_DC_MT_600000:scan:62396:SAGQGEVLVYVEDPAGHQEEAK/3)
-This PSM clearly shows that while there are definitely other, more abundant analytes in the selection window, this peptide SAGQGEVLVYVEDPAGHQEEAK (3+) has
-very good evidence of being one of the present analytes. There is a very long y ion series and long bio ion series with nearly every residue in the peptide having a y or b ion.
-This USI was selected from a DIA-NN analysis of [PXD019909](https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD019909)
-
-1. USI for SHHSHSSSSSSSASTSGK: [mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Keratinocytes_NN002:scan:4979:SHHSHSSSSSSSASTSGK/2](https://proteomecentral.proteomexchange.org/usi/?usi=mzspec:PXD019909:20180914_QE8_nLC0_BDA_SA_DIA_Keratinocytes_NN002:scan:4979:SHHSHSSSSSSSASTSGK/2)
-This PSM clearly shows a likely false positive identification. There are only identified peaks for b2, y1, y2 peaks, which would potentially be present for many different peptides
-(i.e. these are not very diagnostic ions), even within
-a narrow retention time range. This USI was selected from a DIA-NN analysis of [PXD019909](https://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD019909)
-
-
-
